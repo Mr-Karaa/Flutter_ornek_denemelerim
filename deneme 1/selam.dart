@@ -1,12 +1,12 @@
-
+import 'dart:io';
 
 void main(List<String> args) {
-  print("1.notu gir gir");
+  /*print("1.notu gir gir");
   int not1 = int.parse(stdin.readLineSync()!);
   print("2.notu gir");
   int not2 = int.parse(stdin.readLineSync()!);
-  double sonuc = (not1 + not2)/2;
-  print("sonucunuz $sonuc");
+  double sonuc = (not1 + not2) / 2;
+  print("sonucunuz $sonuc");*/
 
   print("programa hosgeldinn ♥");
   print("lutfen ilk notunu gir ;");
