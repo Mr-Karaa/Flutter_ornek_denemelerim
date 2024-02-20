@@ -1,8 +1,8 @@
 import 'dart:io';
 
 void main(List<String> args) {
-  String ad = "melih";
-  String soyad = "kara";
+  String ad = "Melih";
+  String soyad = "Kara";
   int yas = 21;
 
   print(
