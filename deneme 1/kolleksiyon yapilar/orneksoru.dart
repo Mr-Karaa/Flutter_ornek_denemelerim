@@ -25,8 +25,28 @@ void main(List<String> args) {
 
   List<Map<String, dynamic>> iller =
       <Map<String, dynamic>>[]; //buyuktur kucuuktur isaretini unutma
-  Map<String, dynamic> sehir1 = Map<String, dynamic>(); //kullanim sekli 1
-  
-  Map<String, dynamic> sehir2 = <String, dynamic>{}; //kullanim sekli 2 bu sekilde de yazilabilir
-  var sehir3 = <String,dynamic>{}; //kullanim sekli 3 bu sekilde de yazilabilir
+  Map<String, dynamic> sehir1 = Map<String, dynamic>();
+  sehir1['il_adi:'] = 'tokat';
+  sehir1['ilce_sayisi:'] = 7; //kullanim sekli 1
+  sehir1['plaka:'] = 60;
+
+  Map<String, dynamic> sehir2 = <String, dynamic>{};
+  sehir2['il_adi:'] = 'istanbul';
+  sehir2['ilce_sayisi:'] = 10; //kullanim sekli 1
+  sehir2['plaka:'] = 34; //kullanim sekli 2 bu sekilde de yazilabilir
+
+  var sehir3 = <String, dynamic>{};
+  sehir3['il_adi:'] = 'amasya';
+  sehir3['ilce_sayisi:'] = 5; //kullanim sekli 1
+  sehir3['plaka:'] = 05; //kullanim sekli 3 bu sekilde de yazilabilir
+
+  iller.add(sehir1);
+  iller.add(sehir2);
+  iller.add(sehir3);
+  iller.add({   //suslu parantez goruyorsan bu map yapisidir asla unutma
+    'il_adi': 'izmir',
+    'ilce_sayisi': 5,
+    'plaka': 35,
+  });
+  print(iller);
 }
