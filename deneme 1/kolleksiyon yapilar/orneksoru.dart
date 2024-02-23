@@ -96,14 +96,13 @@ void main(List<String> args) {
   do {
     //do while dongusu olusturduk
     print(
-        'notunuzu giriniz; cikmak icin 0 a basin'); //kullanicidan veri almak icin  cikmak icin bir tus atadik
-    not = int.parse(stdin
-        .readLineSync()!); //simdi notu int parse metodu ile stdin diyerek veri girmesini bekliyoruz
-    if (not != 0) {
-      //eger not 0 esit olmazsa devam et dedik
+        'notunuzu giriniz; cikmak icin -1 a basin'); //kullanicidan veri almak icin  cikmak icin bir tus atadik
+    not = int.parse(stdin.readLineSync()!); //simdi notu int parse metodu ile stdin diyerek veri girmesini bekliyoruz
+    if (not != -1) {
+      //eger not -1 esit olmazsa devam et dedik
       girilenNot.add(not); // notlari listeye ekle dedik
     }
-  } while (girilenNot != 0); //ve dongunun sartini sagladik 0 esit olmamali
+  } while (not != -1); //ve dongunun sartini sagladik 0 esit olmamali
   print(
       "girilen not sayisi ${girilenNot.length}"); //kac not girilmis gormek icin bunu yazdik
   double ortalama = elemanOrtalama(girilenNot); //double olarak eleman ortalama olusturduk bu olusturdugumuz yapi main disinda calisacak olan yapi ile iletisim kurmak icin
