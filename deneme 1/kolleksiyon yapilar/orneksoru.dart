@@ -91,5 +91,29 @@ void main(List<String> args) {
 
   // kullanicidan alinana int degerli sayilari bir listede tut eger 0 a basilirsa tutulan sayilari ortlamasini al
 
-  int sayi= (stdin.readLineSync()!);
+  int not = 0; //ilk once notu 0 a esitle
+  List<int> girilenNot = <int>[]; //girilen notu tutmak icin bir liste olustur
+  do {
+    //do while dongusu olusturduk
+    print(
+        'notunuzu giriniz; cikmak icin 0 a basin'); //kullanicidan veri almak icin  cikmak icin bir tus atadik
+    not = int.parse(stdin
+        .readLineSync()!); //simdi notu int parse metodu ile stdin diyerek veri girmesini bekliyoruz
+    if (not != 0) {
+      //eger not 0 esit olmazsa devam et dedik
+      girilenNot.add(not); // notlari listeye ekle dedik
+    }
+  } while (girilenNot != 0); //ve dongunun sartini sagladik 0 esit olmamali
+  print(
+      "girilen not sayisi ${girilenNot.length}"); //kac not girilmis gormek icin bunu yazdik
+  double ortalama = elemanOrtalama(girilenNot); //double olarak eleman ortalama olusturduk bu olusturdugumuz yapi main disinda calisacak olan yapi ile iletisim kurmak icin
+  print("ortalma ; $ortalama"); //ortalma yi yazdir dedik fakat bundan once mainin altinda tanimlanmis olan parametreler calisacak
+}
+
+double elemanOrtalama(List<int> liste) { //double yapisi ile iletisim yapacak elamani atatatik ve dedik ki sana bir liste  gelecek int degerinde ve onun ismide liste dedik
+  int toplam = 0; //toplam parametresini 0 a esitledik
+  for (int i = 0; i < liste.length; i++) { //for dongusunde listenin uzunligunu 1 arti ve toplami toplamin listenin i ci ekemaniyla toplaina esitle dedik
+    toplam = toplam + liste[i];
+  }
+  return toplam / liste.length; //sonra toplamin uzunluga bolumunu dondur dedik ve mainde ki print ortlama yazdigimiz yere yazdirdik boylece bu soruyu da hallettik
 }
