@@ -28,6 +28,11 @@ void main(List<String> args) {
   mehmet.yas = 35;
   mehmet.calisiyormu = true;
   //soyle dusun biz bir arac taslagi olusturduk asagida class acarak ve bura da da araci serii uretime gecirmis olduk.
+
+  var mert = insan(); //ayni zmaanda var diyerek te yazabiliriz flutter bu yazimi da kabul ediyor
+  mert.ad = 'mert';
+  mert.calisiyormu = false; //gordugumuz gibi burada da digerleri gibi noktadan sonra verilerimmizi getirdik.
+  mert.yas = 5;
 }
 
 class insan {
