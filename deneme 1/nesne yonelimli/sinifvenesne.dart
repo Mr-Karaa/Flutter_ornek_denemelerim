@@ -9,7 +9,7 @@ void main(List<String> args) {
 
   // iste bugun de aslinda yapacagimiz sey siniflandirma olaack bu dersimizde class yapilarini gorcez
   // simdi taslak tamam uretime gecelim kjanfkafkla
-  int sayi = 5; //aslinda boyle tarif etmekten bi farki yok
+  // int sayi = 5; //aslinda boyle tarif etmekten bi farki yok
   insan melih =
       insan(); // = den sonra insan() diyerek aslinda insan melih sinifina deger atamis oluyoruz
   melih.ad =
@@ -37,8 +37,7 @@ void main(List<String> args) {
 
 class insan {
   //bir sinif olusturduk insan hakkinda olanlari sectim ben siz istediginizi secebilirsiniz
-  int?
-      yas; // bos gecemezsin hatasi aldik o yuzden ? ile null deger alabilir dedik
+  int?yas; // bos gecemezsin hatasi aldik o yuzden ? ile null deger alabilir dedik
   String ad = ''; //yada deger alsin dedik ve bu sekilde yazdik
   bool calisiyormu =
       false; // yine bir baska kullanim bool deger de opsiyonel olarak false okuttuk
