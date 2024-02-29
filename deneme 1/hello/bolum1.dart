@@ -16,7 +16,7 @@ void main(List<String> args) {
 
   var selamverirmi = true;
   var kacYasinda = 53;
-  var lakabi = "karalar";
+  var lakabi = "GUBOLAR";
 //Var ise bunun bir fonksiyon oldugunu beliritr ve uc tipte de calisir.
 
   print("sayi------> $sayi");
