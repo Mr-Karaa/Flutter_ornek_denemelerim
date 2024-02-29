@@ -35,6 +35,8 @@ void main(List<String> args) {
       "////////////////"); //burada aslinda altaki yas hesapla metotdunu calistirdik
   opel.bilgileriSoyle();
   opel.yasHesapla();
+    print(
+      "////////////////"); //burada aslinda altaki yas hesapla metotdunu calistirdik
   nissan.bilgileriSoyle();
   nissan.yasHesapla();
 }
@@ -60,7 +62,7 @@ class Araba {
     //burada ise adlnadiirilmis bir metot olusturduk yani normalde bunn uzeriondeki araba satirini kullanamiyorken suan araba.  yazdikrtan sonra ayni olmayan bir cok metot olusturlabilir.
     print("markasiz konsol aktif");
   }
-  Araba.modelsiz(this.marka, this.manuelMi) {
+  Araba.modelsiz(this.marka, this.manuelMi) { //modelsiz adinda bir arac metodu olsuturuldu
     print("modelsiz arac aktif");
   }
   // Araba(int? modelYili, String? marka, bool? manuelMi) { //anahtar kelime kullaniraken this yontemi bu sekilde kullanilir diger yontem ise ustte
@@ -77,7 +79,7 @@ class Araba {
   }
 
   void yasHesapla() {
-    if (modelYili != null) {
+    if (modelYili != null) { //if ile model yili olmayan araca ne yapilmasi gerektigi aciklandi
       print(
           ' $marka arabasinin yasi ${2024 - modelYili!}'); //unlem koymamizin sebebi burada ki deger null olabilir diyo ve bizi uyariyor bizde unlem koyarak diyoruz ki rahat ol kardesim sen null deger almayacaksin.
     } else {
