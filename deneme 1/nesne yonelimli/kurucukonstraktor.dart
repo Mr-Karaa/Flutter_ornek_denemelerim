@@ -3,7 +3,7 @@ void main(List<String> args) {
   //class araba taslak orayi incele ilk once
 
   Araba mercedes =
-      Araba(1998,"benz", true); 
+ Araba(1998,"benz", true); 
       
       //boyle diyerek kutucugu olusturduk simdi bunun icerisne gerekn bilgileri ekleyelim
 
